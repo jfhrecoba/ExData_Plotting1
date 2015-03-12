@@ -1,3 +1,4 @@
+Sys.setlocale(category="LC_TIME",local="USA")
 data<-read.csv("household_power_consumption.txt",sep=";")
 good<-data$Date=="1/2/2007"|data$Date=="2/2/2007"
 subdata<-data[good,]
